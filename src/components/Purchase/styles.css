@@ -1,0 +1,124 @@
+.navbar div img {
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: #fcee09;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+}
+
+.box-header {
+    position: sticky;
+}
+
+
+.step-title {
+    margin-bottom: 16px;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.step-title-box {
+    display: inline-block;
+}
+
+.step-title-box h4 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'BlenderProBold', sans-serif;
+}
+
+.dicount-title {
+    background: #db0d15;
+    color: #fff;
+    font-family: 'BlenderProBold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.dicount-title::before {
+    background-clip: padding-box;
+    background-color: #fcee09;
+    bottom: unset;
+    content: "";
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: unset;
+    left: -13px;
+    top: -14px;
+    transform: rotate(135deg);
+    width: 24px;
+}
+
+.dicount-title::after {
+    background-clip: padding-box;
+    background-color: #fcee09;
+    bottom: -14px;
+    content: "";
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: -13px;
+    transform: rotate(135deg);
+    width: 24px;
+}
+
+.game-boxes {
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.boxes-container img {
+    width: 640px;
+    height: 370px;
+    border: 1px black solid;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.box-first-image:hover {
+    transform: translate(-5px, -10px);
+}
+
+.box-second-image:hover:hover {
+    transform: translate(5px, -10px);
+}
+
+
+.newsletter-header {
+    position: relative;
+}
+
+.newsletter-header hr { 
+    width: 100%;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, .12);;
+    margin: 20px 0; 
+}
+
+.newsletter-header::after {
+    content: '';
+    height: 20px;
+    width: 100%;
+    background-color: #fcee09;
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+}

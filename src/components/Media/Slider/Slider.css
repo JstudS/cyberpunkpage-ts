@@ -1,0 +1,113 @@
+.swiper {
+    min-height: 394px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 64px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    height: calc(100% - 18px);
+    padding-top: 18px
+}
+
+.swiper-slide {
+    max-width: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 38px;
+}
+
+.swiper-slide::before {
+    color: #fcee0a;
+    content: "VID :: v1.091";
+    font-size: 14px;
+    line-height: 130%;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-transform: uppercase;
+    top: -18px;
+}
+
+.swiper-slide::after {
+    border: 1px solid rgba(252, 238, 10, .6);
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.swiper-slide img{
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+}
+
+.gallery-btn-play {
+    background: url('../../../assets/images/play-white-cb6b44e3.svg');
+    height: 48px;
+    position: absolute;
+    width: 74px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.swiper-btns {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+}
+
+.swiper-btn-next, .swiper-btn-prev {
+    background: url('../../../assets/images/btn-next-f95ae879.svg') no-repeat;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    width: 64px;
+}
+
+.swiper-btn-next::after, .swiper-btn-prev::after {
+    color: #fff;
+    content: ">";
+    display: block;
+    font-family: 'BlenderProBold', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+.swiper-btn-prev {
+    transform: rotateY(180deg);
+}
+
+.swiper-index {
+    color: #fff;
+    font-family: 'BlenderProBold', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
